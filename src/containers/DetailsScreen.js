@@ -1,9 +1,7 @@
 import React from "react";
 import Fetch from "react-fetch-component";
 import ReactPlayer from "react-player";
-import { Link } from "react-router-dom";
-import { Grid, withStyles, Button, IconButton } from "@material-ui/core";
-import { Home } from "@material-ui/icons";
+import { Grid, withStyles } from "@material-ui/core";
 import LoadingIndicator from "../components/LoadingIndicator";
 import Header from "../components/Header";
 

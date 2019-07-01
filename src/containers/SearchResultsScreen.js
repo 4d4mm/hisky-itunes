@@ -1,10 +1,6 @@
 import React from "react";
 import Fetch from "react-fetch-component";
 import { connect } from "react-redux";
-import compose from "recompose/compose";
-import { Link } from "react-router-dom";
-import { withStyles, IconButton } from "@material-ui/core";
-import { Home } from "@material-ui/icons";
 import LoadingIndicator from "../components/LoadingIndicator";
 import SearchResult from "../components/SearchResult";
 import SeactReaultsList from "../components/SearchResultsList";
