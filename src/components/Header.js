@@ -14,8 +14,7 @@ const styles = theme => ({
   title: {},
   homeLink: {
     color: "#000",
-    textDecoration: "none",
-    display: "flex"
+    textDecoration: "none"
   }
 });
 
@@ -30,7 +29,7 @@ const Header = ({ title, history, classes }) => (
       >
         <Home />
       </IconButton>
-      {history.length > 1 && (
+      {history.length > 2 && (
         <Button onClick={ev => history.goBack()}>Back to search results</Button>
       )}
     </span>

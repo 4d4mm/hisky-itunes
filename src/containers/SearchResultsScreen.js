@@ -14,7 +14,6 @@ import Header from "../components/Header";
 const SearchResultsScreen = ({
   location,
   history,
-  classes,
   favorites,
   toggleFavorite
 }) => {
@@ -22,7 +21,7 @@ const SearchResultsScreen = ({
   const query = params.get("query");
   const title = query.replace(/\-+/, " ");
   return (
-    <section className={classes.root}>
+    <section>
       <Header
         title={`HiSky iTunes search results for "${title}"`}
         history={history}
@@ -52,10 +51,6 @@ const SearchResultsScreen = ({
                   />
                 );
               })}
-            {data &&
-              data.results &&
-              data.results.length === 0 &&
-              "Oh snap, nothing found."}
           </SeactReaultsList>
         )}
       </Fetch>
