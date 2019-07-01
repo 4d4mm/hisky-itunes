@@ -42,23 +42,6 @@ const DetailsScreen = ({ match, history, classes }) => (
   >
     {({ loading, error, data }) => (
       <div className={classes.root}>
-        {/* <header className={classes.header}>
-          <span>
-            <IconButton
-              component={Link}
-              to="/"
-              className={classes.homeLink}
-              title="Back to search"
-            >
-              <Home />
-            </IconButton>
-            {history.length > 1 && (
-              <Button onClick={ev => history.goBack()}>Back to search</Button>
-            )}
-          </span>
-          <h1 className={classes.title}>{item.trackName}</h1>
-        </header> */}
-
         {loading && <LoadingIndicator title="Loading..." />}
         {error && (
           <>
@@ -76,7 +59,7 @@ const DetailsScreen = ({ match, history, classes }) => (
                 <Grid
                   key={item.trackId || new Date().getTime()}
                   container
-                  spacing={6}
+                  spacing={8}
                   className={classes.grid}
                 >
                   <Grid item xs={12} sm={4}>
