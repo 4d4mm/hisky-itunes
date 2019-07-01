@@ -30,7 +30,7 @@ const Header = ({ title, history, classes }) => (
         <Home />
       </IconButton>
       {history.length > 2 && (
-        <Button onClick={ev => history.goBack()}>Back to search results</Button>
+        <Button onClick={ev => history.goBack()}>Back</Button>
       )}
     </span>
     <h1 className={classes.title}>{title}</h1>

@@ -24,7 +24,12 @@ const styles = theme => ({
   },
   player: {
     width: "100% !important",
-    height: "auto !important"
+    height: "auto !important",
+    minHeight: 60,
+    "&>audio": {
+      width: 100,
+      minHeight: 60
+    }
   },
   header: {
     display: "flex",
